@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donations | Ilm Institute of Lasalle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ilm Institute of Lasalle</h1>
+    <p>Donations</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Support the Institute</h2>
+      <form id="donation-form">
+        <label>
+          Full Name
+          <input type="text" id="donor-name" required />
+        </label>
+        <label>
+          Amount (USD)
+          <input type="number" id="donation-amount" min="1" required />
+        </label>
+        <button type="submit">Donate</button>
+      </form>
+      <p id="donation-message" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Main pages">
+      <a class="card-button" href="index.html">Prayer Timings</a>
+      <a class="card-button active" href="donations.html">Donations</a>
+      <a class="card-button" href="admin.html">Admin</a>
+    </nav>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
