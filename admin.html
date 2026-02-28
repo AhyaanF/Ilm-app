@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Ilm Institute of Lasalle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Ilm Institute of Lasalle</h1>
+    <p>Admin Panel</p>
+  </header>
+
+  <main>
+    <section class="panel" id="admin-login-section">
+      <h2>Admin Login</h2>
+      <form id="admin-login-form">
+        <label>
+          Password
+          <input type="password" id="admin-password" required />
+        </label>
+        <button type="submit">Unlock</button>
+      </form>
+      <p class="helper">Default password: <code>ilmadmin123</code></p>
+      <p id="login-message" class="message"></p>
+    </section>
+
+    <section class="panel hidden" id="admin-editor-section">
+      <h2>Edit Prayer Timings</h2>
+      <form id="prayer-edit-form"></form>
+      <p id="admin-message" class="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    <nav class="footer-nav" aria-label="Main pages">
+      <a class="card-button" href="index.html">Prayer Timings</a>
+      <a class="card-button" href="donations.html">Donations</a>
+      <a class="card-button active" href="admin.html">Admin</a>
+    </nav>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
